@@ -10,6 +10,10 @@ public class LinkedListTest {
         list.add("Tanvir");
         list.addLast("Matlub");
         list.addFirst("Tamim");
+        list.add(2,"Rakib");
+        System.out.println(list);
+        list.remove(2);
+        list.remove("Rakib");
         System.out.println(list);
 
     }
