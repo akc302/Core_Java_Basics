@@ -15,6 +15,9 @@ public class LinkedListTest {
         list.remove(2);
         list.remove("Rakib");
         System.out.println(list);
-
+        list.removeLast();
+        System.out.println(list);
+        list.removeFirst();
+        System.out.println(list);
     }
 }
