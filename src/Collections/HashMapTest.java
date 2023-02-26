@@ -2,6 +2,7 @@ package Collections;
 
 import java.util.HashMap;
 import java.util.Map;
+
 public class HashMapTest {
     public static void main(String[] args) {
         Map<String, Integer> hashmap = new HashMap<String, Integer>();
@@ -19,5 +20,10 @@ public class HashMapTest {
         for (String key: hashmap.keySet()){
             System.out.println("key: "+key + ", value: " +hashmap.get(key));
         }
+        //another way to print the hashmap
+        for (Map.Entry<String, Integer> entry: hashmap.entrySet()){
+            System.out.println("key :" +entry.getKey() + " value:  "+entry.getValue());
+        }
+
     }
 }
